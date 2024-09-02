@@ -1,0 +1,101 @@
+@import '../styles/global';
+
+.navbar {
+  background-color: $colorBackground;
+  padding: 10px 20px;
+  border-bottom: 0px solid $colorOnBackground;
+  box-shadow: 0px 4px 8px 3px #00000026;
+
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .navbar-logo {
+    margin-right: 200px;
+
+    .logo-image {
+      height: 20px;
+      width: auto;
+      cursor: pointer;
+    }
+  }
+
+  .navbar-hamburger {
+    display: none;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    object-fit: contain;
+
+    @include media-md {
+      display: block;
+    }
+  }
+
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0 auto;
+    padding: 0;
+    flex-grow: 1;
+    @media (max-width: 768px) {
+      display: none;
+    }
+    /* @include media-md {
+      display: none;
+       flex-direction: column;
+      position: absolute;
+      top: 50px;
+      right: 0;
+      background-color: $colorBackground;
+      width: 200px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 10px 0;
+
+      &.active {
+        display: flex;
+      }
+    } */
+
+    .navbar-menu-item {
+      margin: 0;
+
+      &.active {
+        .navbar-menu-link {
+          @extend .bold;
+          color: $colorPrimary;
+        }
+      }
+
+      .navbar-menu-link {
+        @extend .body2;
+        color: $colorOnBackground;
+        background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        text-decoration: none;
+        transition: color 0.3s;
+
+        &:hover {
+          color: $colorPrimary;
+        }
+      }
+    }
+  }
+
+  .navbar-buttons {
+    display: flex;
+    gap: 14px;
+
+    @include media-md {
+      display: none;
+    }
+  }
+}

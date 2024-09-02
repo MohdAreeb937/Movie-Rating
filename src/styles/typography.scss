@@ -1,0 +1,34 @@
+$fontFamily: 'Arial, sans-serif';
+$fontWeight: 400;
+$fontWeightBold: 700;
+$lineHeight: 1.6;
+
+$body1FontSize: 16px;
+$body1FontWeight: $fontWeight;
+
+$body2FontSize: 14px;
+$body2FontWeight: $fontWeight;
+
+$buttonLabelFontSize: 16px;
+$buttonLabelFontWeight: 500;
+
+body {
+  font-family: $fontFamily;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+}
+
+.body2 {
+  font-size: $body2FontSize;
+  font-weight: $body2FontWeight;
+  line-height: $lineHeight;
+}
+
+.button-label {
+  font-size: $buttonLabelFontSize;
+  font-weight: $buttonLabelFontWeight;
+}
+
+.bold {
+  font-weight: $fontWeightBold;
+}

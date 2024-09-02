@@ -1,0 +1,32 @@
+// Define button styles
+.button-primary {
+  @extend .button-label;
+  background-color: $colorPrimary;
+  color: $colorOnPrimary;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($colorPrimary, 10%);
+  }
+}
+
+.button-secondary {
+  @extend .button-label;
+  background-color: $colorOnPrimary;
+  color: $colorPrimary;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($colorOnPrimary, 10%);
+  }
+}

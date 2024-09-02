@@ -1,0 +1,24 @@
+{
+  "ratings": [
+    {
+      "movieName": "asdfgh",
+      "rating": 3,
+      "id": "289e"
+    },
+    {
+      "id": "748d",
+      "movieName": "Inception",
+      "rating": 5
+    },
+    {
+      "id": "790e",
+      "movieName": "Deadpool",
+      "rating": 5
+    },
+    {
+      "id": "6cc0",
+      "movieName": "cvbnm,",
+      "rating": 3
+    }
+  ]
+}
